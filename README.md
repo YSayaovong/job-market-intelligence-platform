@@ -1,51 +1,38 @@
-# Job Board Scraper
+# Job Market Data Scraper | Python Web Scraping & Analytics
 
-A Python-based web scraping tool that extracts job postings from online job boards and outputs structured data for further analysis. This project is designed to support job market research, trend analysis, and career planning by automating the collection of job listing data.
-
----
-
-## 🔍 Project Overview
-
-This scraper collects key job posting data including:
-- Job title  
-- Company name  
-- Location  
-- Posting date  
-- Job link or ID  
-
-The script is flexible and can be adapted to different job boards or filtered by specific roles, technologies, or locations.
+## Executive Summary
+This project scrapes job postings and analyzes skill demand across industries.  
+Results highlight SQL, Python, and BI as top-requested skills, helping align career paths with employer needs.  
 
 ---
 
-## 🚀 Features
+## Business Problem
+Job postings are scattered across platforms, making it hard to identify skill demand trends.  
 
-- Extracts job data using `requests`, `BeautifulSoup`, or similar libraries
-- Outputs clean, structured data to CSV or JSON
-- Simple, readable script designed for modification or integration into ETL pipelines
-- Ideal starting point for job trend analytics or resume-targeting tools
+📊 Example visuals (add skill frequency charts and sample posting output)  
 
 ---
 
-## ⚙️ Tech Stack
-
-- **Language:** Python 3  
-- **Libraries:** `requests`, `BeautifulSoup`, `pandas`  
-- **Output Formats:** CSV, JSON
-
----
-
-## 📁 Example Output
-
-| Title                  | Company        | Location     | Date Posted | Job Link |
-|------------------------|----------------|--------------|-------------|----------|
-| Data Engineer          | Acme Corp      | Atlanta, GA  | 2025-08-01  | [Link](#) |
-| Machine Learning Eng.  | Beta Tech Inc. | Remote       | 2025-08-02  | [Link](#) |
+## Methodology
+- Python BeautifulSoup scraping  
+- Pandas data cleaning  
+- Visualization of skill demand  
 
 ---
 
-## 📦 How to Use
+## Skills
+- Web scraping with Python  
+- Data analysis with Pandas  
+- Visualization with Matplotlib  
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/YSayaovong/job-board-scraper.git
-   cd job-board-scraper
+---
+
+## Results & Business Recommendation
+- SQL appeared in 80% of roles reviewed  
+- Recommendation: prioritize SQL and BI certifications  
+
+---
+
+## Next Steps
+- Expand scraper to LinkedIn & Indeed APIs  
+- Automate monthly scraping for market updates  
