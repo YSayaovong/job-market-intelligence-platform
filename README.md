@@ -1,38 +1,78 @@
-# Job Market Data Scraper | Python Web Scraping & Analytics
+# Enterprise Financial Data Lake ETL
 
-## Executive Summary
-This project scrapes job postings and analyzes skill demand across industries.  
-Results highlight SQL, Python, and BI as top-requested skills, helping align career paths with employer needs.  
+This project builds a scalable ETL (Extract-Transform-Load) pipeline and data lake architecture tailored for large-scale financial datasets. It demonstrates data engineering, data lake design, and pipeline orchestration.
 
 ---
 
-## Business Problem
-Job postings are scattered across platforms, making it hard to identify skill demand trends.  
+## Overview
 
-📊 Example visuals (add skill frequency charts and sample posting output)  
-
----
-
-## Methodology
-- Python BeautifulSoup scraping  
-- Pandas data cleaning  
-- Visualization of skill demand  
+The project enables enterprise-grade data processing for financial systems: ingesting raw financial data, applying transformations, organizing storage zones, and preparing analytics-ready datasets. It focuses on building robust, modular ETL workflows suited for production-scale operations.
 
 ---
 
-## Skills
-- Web scraping with Python  
-- Data analysis with Pandas  
-- Visualization with Matplotlib  
+## Tech Stack
+
+- Cloud storage (AWS S3, Azure Blob or similar)
+- Python for ETL scripting
+- Spark / PySpark or similar distributed processing tools
+- Workflow orchestration (Airflow, Glue Jobs, Step Functions, etc.)
+- Data lake architecture (raw → processed → analytics)
 
 ---
 
-## Results & Business Recommendation
-- SQL appeared in 80% of roles reviewed  
-- Recommendation: prioritize SQL and BI certifications  
+## Features
+
+- Ingests financial datasets such as transactions, market data, and positions
+- Cleans, validates, transforms, and normalizes raw data
+- Uses multi-zone data lake structure for organized storage
+- Modular pipelines supporting multiple data types
+- Infrastructure automation for deployment repeatability
+- Produces analytics-ready outputs for BI and reporting
 
 ---
 
-## Next Steps
-- Expand scraper to LinkedIn & Indeed APIs  
-- Automate monthly scraping for market updates  
+## Project Structure
+
+```
+.
+├── infrastructure/       # IaC scripts and deployment automation
+├── pipelines/            # ETL jobs and transformation logic
+├── data/                 # Example input/output data (or references)
+├── analytics/            # Curated output datasets
+└── README.md
+```
+
+---
+
+## Getting Started
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/YSayaovong/enterprise-financial-data-lake-etl.git
+cd enterprise-financial-data-lake-etl
+```
+
+### 2. Configure Environment
+Set cloud credentials, endpoints, and pipeline configuration files.
+
+### 3. Deploy Infrastructure
+Use the files inside `infrastructure/` to provision storage, compute, and orchestration layers.
+
+### 4. Run Pipelines
+Execute scripts inside `pipelines/` to ingest raw data, process it, and populate analytics outputs.
+
+---
+
+## Potential Enhancements
+
+- Add real-time streaming ingestion
+- Implement data quality validation frameworks
+- Add metadata, lineage, and governance tools
+- Build BI dashboards consuming analytics zone
+- Optimize processing for scale and cost
+
+---
+
+## License
+
+This project is open-source under the MIT License.
